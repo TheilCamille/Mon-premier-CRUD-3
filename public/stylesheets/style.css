@@ -1,0 +1,149 @@
+body {
+  display: flex;
+  justify-content: center;
+
+  background-image: url("../images/texture1.jpg");
+
+  background-size: no repeat;
+}
+
+
+main {
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+  margin-top: 15%;
+  width: 80%;
+
+  /* background-image: url('../images/texture.jpg'); */
+  background-color: rgba(0, 0, 0, 0.5);
+
+  background-size: cover;
+}
+
+a {
+  color: #00B7FF;
+}
+
+body div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 100px;
+  width: 475px;
+  border: 1px white ridge;
+  margin-top: 25px;
+  padding: 8px;
+  color: white;
+
+
+}
+
+
+h2 {
+  font-size: 18px;
+}
+
+p {
+  font-style: italic;
+}
+
+button {
+  width: 100px;
+  height: 35px;
+  color: white;
+}
+
+h1 {
+  color: #FF0040;
+
+
+}
+
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px #FF0040 ridge;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+li {
+  color: white;
+  list-style-type: none;
+
+  font-size:22px;
+}
+
+.yolo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  width: 100%;
+  height: 100%;
+  border-right: 2px #FF0040 solid;
+
+
+}
+
+#delete {
+  width: 125px;
+  height: 100%;
+  margin-left: 15px;
+  color: white;
+  transition: 1s;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#delete:hover {
+  background-color: rgba(255, 0, 64, 0.7);
+  color: white;
+  transition: 1s;
+}
+#update  {
+  width: 125px;
+  height: 100%;
+  margin-left: 15px;
+  transition: 1s;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+#update:hover {
+  background-color: rgba(255, 0, 64, 0.7);
+  color: white;
+  transition: 1s;
+
+}
+
+#submit {
+  color: white;
+  transition: 1s;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#submit:hover {
+  background-color: rgba(255, 0, 64, 0.7);
+  color: white;
+  transition: 1s;
+}
+
+ul {
+  padding-bottom: 15px;
+  border-bottom: 2px #FF0040 solid;
+}
+
+form input {
+  height: 30px;
+  background-color: rgba(255, 0, 64, 0.2);
+  color: white;
+
+}
+
+::-webkit-input-placeholder {
+  color: white;
+}

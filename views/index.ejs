@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Let's CRUD</title>
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+        <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+    </head>
+    <body>
+        <main>
+            <header><h1>Liste dynamique</h1>
+            </header>
+
+            <ul class="quotes">
+                 <% for(var i=0; i<quotes.length; i++) {%>
+                <li class="quote">
+                     <span><%= quotes[i].name %></span>:
+                     <span>« <%= quotes[i].quote %> »</span>
+                </li>
+                <% } %>
+             </ul>
+
+            <form action="/quotes" method="POST">
+                 <input type="text" placeholder="Nom" name="name">
+                 <input type="text" placeholder="Message" name="quote">
+                 <button id="submit" class="pure-button pure-button-active" type="submit">Submit</button>
+             </form>
+            <div>
+                <section class="yolo">
+                    <h2>Delete</h2>
+                    <p>//Cibler le message à l'aide du formulaire.</p>
+                </section>
+                 <button class="button-error pure-button" id="delete">Supprimer</button>
+            </div>
+
+            <div>
+                <section class="yolo">
+                    <h2>Update</h2>
+                    <p>//Possibilité de selectionner un message par son contenue ou son auteur.</p>
+                </section>
+                <button class="button-error pure-button" id="update">Modifier</button>
+             </div>
+        </main>
+        <script src="main.js"></script>
+    </body>
+</html>
